@@ -1,0 +1,100 @@
+MERN Stack Workshop (AIT Bengaluru)
+Duration: 6 days (36 hours)
+
+Day1: Monday 26-05-2025
+
+Session1:
+Theory on Databases and Technologies, Web Apps etc.
+1. notepad++		For making quick notes
+Link:	https://notepad-plus-plus.org/downloads/v8.7.7/
+
+2. node
+Link:	https://nodejs.org/en/download
+
+3. VS Code
+Link: 	https://code.visualstudio.com/download
+
+4. git
+Link:	https://git-scm.com/downloads
+
+5. postman
+Link:	https://www.postman.com/downloads/
+
+6. mongodb
+	a. server
+	Link:	https://www.mongodb.com/try/download/community
+	b. compass (.exe)
+	Link:	https://www.mongodb.com/try/download/shell
+	c. shell (download .msi file)
+	Link:	https://www.mongodb.com/try/download/shell
+Session2:
+App Installations and Git Repo creation, PAT creation, git commands
+
+Once all installer files (setup files, .msi files) are downloaded, cut and paste them into their respective folders inside the software folder.
+
+Now install all the Apps one by one (double click and install)
+
+Open the command prompt in home directory and Check if the apps are availabvle to use/run.
+
+$ code --version
+$ git --version
+
+If the app/command is not recognisable even after installing, then go to the path where it is installed (For example, mongod command, is available in C:\Program Files\MongoDB\Server\7.0\bin) Copy thios path and add it to the Environment variables "path" and now close and open the command prompt and you can see the "mongod" command is available for use(recognised).
+
+Git:
+1. Create(login into) git account (use your personal and permanent email id)
+
+2. Create new Repo
+	Click on + button on top (Click New Repository)
+	Repo name -> Description -> Public -> Add Readme File -> Create
+Repo URL:	https://github.com/neelmyna/ait_mern
+
+
+3. Configure your git account with your system/laptop
+	$ git config --global user.name "USERNAME"
+	$ git config --global user.email "EMAIL"
+
+4. Create Personal Access Token (PAT)
+	On top right corner, click on profile icon
+	Scroll down and click settings
+	Next window, scroll down and click developer settings (bottom left)
+	Next window, left top, Click Personal access tokens
+	Click Tokens classic
+	Next window, Click generate new token, Click generate new token classic
+	Add a note (this PAT is created for my learning purpose during my engineering)
+	Click Expiration, select NO EXPIRIRATION
+	Select the 1st (top most) check box Repo
+	Scroll down fully and click Generate token (green button)
+	Now copy the PAT
+	Come to gmail(your personal mailing app)
+	Mail the PAT to yourself (Add the mail subject as "git pat")
+	NOTE: Do not store the PAT anywhere else. It is confidential. And you need it for next few years. Hence mail it to yourself 
+	
+GIT COMMANDS:
+
+$ git status
+This is to know the status of my local repo w.r.t. to the remote repo
+
+$ git clone git_repo_url
+$ git clone https://github.com/neelmyna/ait_mern
+
+$ git pull origin main
+This command downloads the content of the remote repo that is not available in local repo (from the main branch only).
+
+CLONE USING PAT:
+$ git clone https://PAT@git_URL
+
+
+PAT-personal access token
+NOTEPAD++ COMMANDS :
+ctrl+g is used to go to the line we dsire
+ctrl+home-to go to the starting line
+ctrl+end -goes to the last line of the file
+ctrl+shift+u-to make the line appear in caps
+single mouse click: the  cursor moves to the desired location
+double mouse click-selects the desired word
+triple mouse click-it selects the desired line
+ctrl+d-copies the line which we are currently in , it appears in the next line copied
+ctrl+->/<- moves left or right by the words not the character
+ctrl+i-used to select the current line thatv we are currently we are in
+python is specifically used for the sdl rad

@@ -1,0 +1,4 @@
+class is a user defined data type
+interview questions:
+why the constructor in java is static abstract 
+why in the main we have to declare the public static void main
