@@ -2,3 +2,16 @@ class is a user defined data type
 interview questions:
 why the constructor in java is static abstract 
 why in the main we have to declare the public static void main
+object is an encapsulated  group of data  which are closely related to each other
+CLASS : that gives a clear  boundary
+void setMarks(int marks) {
+ this.marks = marks(this is the function argument);
+ //this.marks makes it as the object variable
+ }
+ populateMarks(List Students <Student> ,int marks[]) {
+ int i = 0;
+ for(student : Students) {
+ student.setMarks(marks[i]);
+ i++;
+ }
+ }
