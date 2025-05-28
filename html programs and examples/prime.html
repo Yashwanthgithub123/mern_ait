@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prime Number Checker</title>
+  <link rel="stylesheet" href="new_index.css" />
+</head>
+<body>
+  <div class="initial">
+    <div>
+      <label for="inputNumber">Input Number:</label>
+      <input type="text" id="inputNumber" class="type1" placeholder="Enter number">
+    </div>
+    <div>
+      <label for="output">Is Prime?</label>
+      <input type="text" id="output" class="type2" readonly>
+    </div>
+    <div>
+      <button onclick="checkPrime()" class="type3">Check Prime</button>
+    </div>
+  </div>
+
+  <script>
+    function checkPrime() {
+      const number = parseInt(document.getElementById('inputNumber').value);
+      const output = document.getElementById('output');
+
+      if (isNaN(number)) {
+        output.value = "Enter a valid number";
+        return;
+      }
+
+      if (number <= 1) {
+        output.value = "No";
+        return;
+      }
+
+      let isPrime = true;
+      for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+
+      output.value = isPrime ? "Yes" : "No";
+    }
+  </script>
+</body>
+</html>

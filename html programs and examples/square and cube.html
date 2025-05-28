@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Square and Cube Calculator</title>
+  <link rel="stylesheet" href="html3.css" />
+</head>
+<body>
+  <div class="container">
+    <p class="heading">Square and Cube Calculator</p>
+    <div class="input-section">
+      <label for="numberInput">Enter a number:</label>
+      <input type="text" id="numberInput" class="textbox" placeholder="e.g. 5" />
+    </div>
+
+    <div class="buttons">
+      <button onclick="findSquare()">Find Square</button>
+      <button onclick="findCube()">Find Cube</button>
+    </div>
+
+    <div class="output-section">
+      <label for="resultOutput">Result:</label>
+      <input type="text" id="resultOutput" class="textbox" readonly />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
