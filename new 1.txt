@@ -1,3 +1,6 @@
+hello vivek how are you
+
+
 class is a user defined data type
 interview questions:
 why the constructor in java is static abstract 
